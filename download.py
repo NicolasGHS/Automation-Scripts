@@ -2,8 +2,6 @@
 
 import os
 
-# path = "/home/nicolas/Downloads"
-
 home_dir = os.path.expanduser("~")
 path = os.path.join(home_dir, "Downloads")
 
