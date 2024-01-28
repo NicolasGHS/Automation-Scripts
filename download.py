@@ -27,3 +27,9 @@ for file in downloads_list:
         os.rename(f"{path}/{file}", f"{path}/appImages/{file}")
         print(f"Succefully moved {file}.")
 
+for file in downloads_list:
+    if zip_extension not in file and deb_extension not in file and appImage_extension not in file:
+        if "." in file:
+            os.rename(f"{path}/{file}", f"{path}/_na-te-kijken/{file}")
+
+            print(f"Succesfully moved: {file}")
